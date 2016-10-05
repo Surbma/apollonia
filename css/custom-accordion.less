@@ -1,0 +1,32 @@
+.uk-accordion {
+	margin-bottom: 10px;
+}
+
+.uk-accordion-title {
+	margin: 3px 0 0;
+	background: #4f2583;
+	font-size: 14px;
+	color: #fff;
+}
+
+.uk-accordion-title::after {
+	content: '+';
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.uk-accordion-title.uk-active::after {
+	content: '-';
+}
+
+.uk-accordion-title.uk-active {
+	background: #0088a5;
+}
+
+.uk-accordion-content {
+	margin-bottom: 10px;
+	padding: 12px 15px 15px;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
