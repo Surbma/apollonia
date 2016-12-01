@@ -102,7 +102,6 @@ blockquote {
 .et_pb_blurb_container {
 	margin-bottom: 30px;
 }
-
 @media (min-width: 981px) {
 	.et_right_sidebar #main-content .container:before {
 		left: 30% !important;
@@ -132,7 +131,6 @@ blockquote {
 		border-left: 0;
 	}
 }
-
 @media only screen and (max-width: 1199px) {
 	// #top-menu-nav {display: none;}
 	// #et_mobile_nav_menu {display: block;}
@@ -229,13 +227,13 @@ a:hover {
 	font-weight: bold;
 }
 
-.widget_subpages,
-.widget_nav_menu {
+.widget_nav_menu,
+.widget_subpages {
 	background: #f5f5f5;
 }
 
-.widget_subpages .widgettitle,
-.widget_nav_menu .widgettitle {
+.widget_nav_menu .widgettitle,
+.widget_subpages .widgettitle {
 	padding: 15px;
 	border-bottom: 1px solid #ddd;
 	text-transform: uppercase;
@@ -243,33 +241,33 @@ a:hover {
 	font-weight: bold;
 }
 
-.widget_subpages.et_pb_widget ul li,
-.widget_nav_menu.et_pb_widget ul li {
+.widget_nav_menu.et_pb_widget ul li,
+.widget_subpages.et_pb_widget ul li {
 	margin: 0;
 }
 
-.widget_subpages li a,
-.widget_nav_menu li a {
+.widget_nav_menu li a,
+.widget_subpages li a {
 	display: block;
 	padding: 10px 15px;
 	color: #4e2583;
 	font-size: 16px;
 }
 
-.widget_subpages .sub-menu li a,
-.widget_nav_menu .sub-menu li a {
+.widget_nav_menu .sub-menu li a,
+.widget_subpages .sub-menu li a {
 	background: #fafafa;
 	padding-left: 30px;
 }
 
-.widget_subpages li a:hover,
-.widget_subpages .sub-menu li a:hover,
-.widget_subpages li.widget_subpages_current_page a,
-.widget_subpages .sub-menu li.widget_subpages_current_page a,
-.widget_nav_menu li a:hover,
 .widget_nav_menu .sub-menu li a:hover,
+.widget_nav_menu .sub-menu li.current-menu-item > a,
+.widget_nav_menu li a:hover,
 .widget_nav_menu li.current-menu-item > a,
-.widget_nav_menu .sub-menu li.current-menu-item > a {
+.widget_subpages .sub-menu li a:hover,
+.widget_subpages .sub-menu li.widget_subpages_current_page a,
+.widget_subpages li a:hover,
+.widget_subpages li.widget_subpages_current_page a {
 	background: #0088a5;
 	color: #fff;
 }
@@ -306,7 +304,6 @@ body.tax-recept-tipus .et_pb_post {
 	margin: 0 auto 20px;
 	max-width: 233px;
 }
-
 @media (min-width: 480px) {
 	body.post-type-archive-recept .et_pb_post,
 	body.tag .et_pb_post,
@@ -315,7 +312,6 @@ body.tax-recept-tipus .et_pb_post {
 		margin: 0 10px 20px;
 	}
 }
-
 @media (min-width: 648px) and (max-width: 963px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(2n+1),
 	body.tag .et_pb_post:nth-of-type(2n+1),
@@ -323,7 +319,6 @@ body.tax-recept-tipus .et_pb_post {
 		clear: both;
 	}
 }
-
 @media (min-width: 964px) and (max-width: 1279px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(3n+1),
 	body.tag .et_pb_post:nth-of-type(3n+1),
@@ -331,7 +326,6 @@ body.tax-recept-tipus .et_pb_post {
 		clear: both;
 	}
 }
-
 @media (min-width: 1280px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(4n+1),
 	body.tag .et_pb_post:nth-of-type(4n+1),
@@ -350,4 +344,17 @@ body.tax-recept-tipus .et_pb_post .entry-content {
 .img-slider .et_pb_slide_description,
 .img-slider .et_pb_slider_fullwidth_off .et_pb_slide_description {
 	padding: 0;
+}
+
+/* Főmenüpontok maximális szélességet kaptak */
+
+#top-menu li {
+	width: 170px;
+	vertical-align: text-top;
+	height: 28px;
+	text-align: left;
+}
+
+.et_header_style_centered #et_search_icon:before {
+	top: 0;
 }
