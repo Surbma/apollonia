@@ -273,7 +273,10 @@ a:hover {
 	float: none;
 }
 
+// Archívum oldalak egyedi formázása
+
 body.post-type-archive-recept #page-container #left-area,
+body.post-type-archive-recipe #page-container #left-area,
 body.tag #page-container #left-area,
 body.tax-recept-tipus #page-container #left-area {
 	float: none;
@@ -284,6 +287,8 @@ body.tax-recept-tipus #page-container #left-area {
 
 body.post-type-archive-recept #main-content .container:before,
 body.post-type-archive-recept #sidebar,
+body.post-type-archive-recipe #main-content .container:before,
+body.post-type-archive-recipe #sidebar,
 body.tag #main-content .container:before,
 body.tag #sidebar,
 body.tax-recept-tipus #main-content .container:before,
@@ -292,6 +297,7 @@ body.tax-recept-tipus #sidebar {
 }
 
 body.post-type-archive-recept .et_pb_post,
+body.post-type-archive-recipe .et_pb_post,
 body.tag .et_pb_post,
 body.tax-recept-tipus .et_pb_post {
 	background-color: #f5f5f5;
@@ -301,12 +307,14 @@ body.tax-recept-tipus .et_pb_post {
 }
 
 body.post-type-archive-recept .et_pb_post h2,
+body.post-type-archive-recipe .et_pb_post h2,
 body.tag .et_pb_post h2,
 body.tax-recept-tipus .et_pb_post h2 {
 	font-size: 22px;
 }
 @media (min-width: 480px) {
 	body.post-type-archive-recept .et_pb_post,
+	body.post-type-archive-recipe .et_pb_post,
 	body.tag .et_pb_post,
 	body.tax-recept-tipus .et_pb_post {
 		float: left;
@@ -315,6 +323,7 @@ body.tax-recept-tipus .et_pb_post h2 {
 }
 @media (min-width: 648px) and (max-width: 963px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(2n+1),
+	body.post-type-archive-recipe .et_pb_post:nth-of-type(2n+1),
 	body.tag .et_pb_post:nth-of-type(2n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(2n+1) {
 		clear: both;
@@ -322,6 +331,7 @@ body.tax-recept-tipus .et_pb_post h2 {
 }
 @media (min-width: 964px) and (max-width: 1279px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(3n+1),
+	body.post-type-archive-recipe .et_pb_post:nth-of-type(3n+1),
 	body.tag .et_pb_post:nth-of-type(3n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(3n+1) {
 		clear: both;
@@ -329,6 +339,7 @@ body.tax-recept-tipus .et_pb_post h2 {
 }
 @media (min-width: 1280px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(4n+1),
+	body.post-type-archive-recipe .et_pb_post:nth-of-type(4n+1),
 	body.tag .et_pb_post:nth-of-type(4n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(4n+1) {
 		clear: both;
@@ -336,6 +347,7 @@ body.tax-recept-tipus .et_pb_post h2 {
 }
 
 body.post-type-archive-recept .et_pb_post .entry-content,
+body.post-type-archive-recipe .et_pb_post .entry-content,
 body.tag .et_pb_post .entry-content,
 body.tax-recept-tipus .et_pb_post .entry-content {
 	padding-top: 0;
@@ -347,7 +359,7 @@ body.tax-recept-tipus .et_pb_post .entry-content {
 	padding: 0;
 }
 
-/* Főmenüpontok maximális szélességet kaptak */
+// Főmenüpontok maximális szélességet kaptak
 
 #top-menu li {
 	width: 170px;
@@ -363,13 +375,18 @@ body.tax-recept-tipus .et_pb_post .entry-content {
 // Az egy oszlopos Footer igazítása
 
 #footer-widgets {
-	padding-top: 2%;
+	padding: 2% 0;
 }
 
-#footer-widgets .footer-widget {
-	margin-bottom: 2%;
-}
-
+#footer-widgets .footer-widget,
 #footer-widgets .et_pb_widget {
-	width: 100%;
+	width: 100% !important;
+	margin: 0 !important;
+	float: none;
+}
+
+// Prémium WP közösségi ikonok elrejtése Divi Page builder esetén
+
+.page.et_pb_pagebuilder_layout .pwp-share-buttons {
+	display: none;
 }
