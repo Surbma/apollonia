@@ -277,8 +277,10 @@ a:hover {
 
 body.post-type-archive-recept #page-container #left-area,
 body.post-type-archive-recipe #page-container #left-area,
+body.post-type-archive-recepti #page-container #left-area,
 body.tag #page-container #left-area,
-body.tax-recept-tipus #page-container #left-area {
+body.tax-recept-tipus #page-container #left-area,
+body.tax-vrsta-recepta #page-container #left-area {
 	float: none;
 	padding-left: 0;
 	padding-right: 0;
@@ -289,17 +291,23 @@ body.post-type-archive-recept #main-content .container:before,
 body.post-type-archive-recept #sidebar,
 body.post-type-archive-recipe #main-content .container:before,
 body.post-type-archive-recipe #sidebar,
+body.post-type-archive-recepti #main-content .container:before,
+body.post-type-archive-recepti #sidebar,
 body.tag #main-content .container:before,
 body.tag #sidebar,
 body.tax-recept-tipus #main-content .container:before,
-body.tax-recept-tipus #sidebar {
+body.tax-recept-tipus #sidebar,
+body.tax-vrsta-recepta #main-content .container:before,
+body.tax-vrsta-recepta #sidebar {
 	display: none;
 }
 
 body.post-type-archive-recept .et_pb_post,
 body.post-type-archive-recipe .et_pb_post,
+body.post-type-archive-recepti .et_pb_post,
 body.tag .et_pb_post,
-body.tax-recept-tipus .et_pb_post {
+body.tax-recept-tipus .et_pb_post,
+body.tax-vrsta-recepta .et_pb_post {
 	background-color: #f5f5f5;
 	padding: 20px;
 	margin: 0 auto 20px;
@@ -308,15 +316,19 @@ body.tax-recept-tipus .et_pb_post {
 
 body.post-type-archive-recept .et_pb_post h2,
 body.post-type-archive-recipe .et_pb_post h2,
+body.post-type-archive-recepti .et_pb_post h2,
 body.tag .et_pb_post h2,
-body.tax-recept-tipus .et_pb_post h2 {
+body.tax-recept-tipus .et_pb_post h2,
+body.tax-vrsta-recepta .et_pb_post h2 {
 	font-size: 22px;
 }
 @media (min-width: 480px) {
 	body.post-type-archive-recept .et_pb_post,
 	body.post-type-archive-recipe .et_pb_post,
+	body.post-type-archive-recepti .et_pb_post,
 	body.tag .et_pb_post,
-	body.tax-recept-tipus .et_pb_post {
+	body.tax-recept-tipus .et_pb_post,
+	body.tax-vrsta-recepta .et_pb_post {
 		float: left;
 		margin: 0 10px 20px;
 	}
@@ -324,32 +336,40 @@ body.tax-recept-tipus .et_pb_post h2 {
 @media (min-width: 648px) and (max-width: 963px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(2n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(2n+1),
+	body.post-type-archive-recepti .et_pb_post:nth-of-type(2n+1),
 	body.tag .et_pb_post:nth-of-type(2n+1),
-	body.tax-recept-tipus .et_pb_post:nth-of-type(2n+1) {
+	body.tax-recept-tipus .et_pb_post:nth-of-type(2n+1),
+	body.tax-vrsta-recepta .et_pb_post:nth-of-type(2n+1) {
 		clear: both;
 	}
 }
 @media (min-width: 964px) and (max-width: 1279px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(3n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(3n+1),
+	body.post-type-archive-recepti .et_pb_post:nth-of-type(3n+1),
 	body.tag .et_pb_post:nth-of-type(3n+1),
-	body.tax-recept-tipus .et_pb_post:nth-of-type(3n+1) {
+	body.tax-recept-tipus .et_pb_post:nth-of-type(3n+1),
+	body.tax-vrsta-recepta .et_pb_post:nth-of-type(3n+1) {
 		clear: both;
 	}
 }
 @media (min-width: 1280px) {
 	body.post-type-archive-recept .et_pb_post:nth-of-type(4n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(4n+1),
+	body.post-type-archive-recepti .et_pb_post:nth-of-type(4n+1),
 	body.tag .et_pb_post:nth-of-type(4n+1),
-	body.tax-recept-tipus .et_pb_post:nth-of-type(4n+1) {
+	body.tax-recept-tipus .et_pb_post:nth-of-type(4n+1),
+	body.tax-vrsta-recepta .et_pb_post:nth-of-type(4n+1) {
 		clear: both;
 	}
 }
 
 body.post-type-archive-recept .et_pb_post .entry-content,
 body.post-type-archive-recipe .et_pb_post .entry-content,
+body.post-type-archive-recepti .et_pb_post .entry-content,
 body.tag .et_pb_post .entry-content,
-body.tax-recept-tipus .et_pb_post .entry-content {
+body.tax-recept-tipus .et_pb_post .entry-content,
+body.tax-vrsta-recepta .et_pb_post .entry-content {
 	padding-top: 0;
 }
 
