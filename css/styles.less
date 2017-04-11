@@ -11,12 +11,12 @@
 	font-weight: 600;
 }
 
-.entry-content ol,
-.entry-content ul {
+.entry-content :not(div.et_pb_widget_area) ol,
+.entry-content :not(div.et_pb_widget_area) ul {
 	margin-left: 15px;
 }
 
-.entry-content ul {
+.entry-content :not(div.et_pb_widget_area) ul {
 	list-style-type: square !important;
 }
 
@@ -249,6 +249,12 @@ a:hover {
 	font-size: 16px;
 }
 
+.widget_nav_menu li a img,
+.widget_subpages li a img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
 .widget_nav_menu .sub-menu li a,
 .widget_subpages .sub-menu li a,
 .widget_nav_menu li li a,
@@ -282,9 +288,11 @@ body.post-type-archive-recept #page-container #left-area,
 body.post-type-archive-recepti #page-container #left-area,
 body.post-type-archive-recipe #page-container #left-area,
 body.post-type-archive-recepty #page-container #left-area,
+body.post-type-archive-retete #page-container #left-area,
 body.tag #page-container #left-area,
 body.tax-recept-tipus #page-container #left-area,
 body.tax-druh-receptu #page-container #left-area,
+body.tax-tip-de-reteta #page-container #left-area,
 body.tax-vrsta-recepta #page-container #left-area {
 	float: none;
 	padding-left: 0;
@@ -300,12 +308,16 @@ body.post-type-archive-recipe #main-content .container:before,
 body.post-type-archive-recipe #sidebar,
 body.post-type-archive-recepty #main-content .container:before,
 body.post-type-archive-recepty #sidebar,
+body.post-type-archive-retete #main-content .container:before,
+body.post-type-archive-retete #sidebar,
 body.tag #main-content .container:before,
 body.tag #sidebar,
 body.tax-recept-tipus #main-content .container:before,
 body.tax-recept-tipus #sidebar,
 body.tax-druh-receptu #main-content .container:before,
 body.tax-druh-receptu #sidebar,
+body.tax-tip-de-reteta #main-content .container:before,
+body.tax-tip-de-reteta #sidebar,
 body.tax-vrsta-recepta #main-content .container:before,
 body.tax-vrsta-recepta #sidebar {
 	display: none;
@@ -315,9 +327,11 @@ body.post-type-archive-recept .et_pb_post,
 body.post-type-archive-recepti .et_pb_post,
 body.post-type-archive-recipe .et_pb_post,
 body.post-type-archive-recepty .et_pb_post,
+body.post-type-archive-retete .et_pb_post,
 body.tag .et_pb_post,
 body.tax-recept-tipus .et_pb_post,
 body.tax-druh-receptu .et_pb_post,
+body.tax-tip-de-reteta .et_pb_post,
 body.tax-vrsta-recepta .et_pb_post {
 	background-color: #f5f5f5;
 	padding: 20px;
@@ -329,9 +343,11 @@ body.post-type-archive-recept .et_pb_post h2,
 body.post-type-archive-recepti .et_pb_post h2,
 body.post-type-archive-recipe .et_pb_post h2,
 body.post-type-archive-recepty .et_pb_post h2,
+body.post-type-archive-retete .et_pb_post h2,
 body.tag .et_pb_post h2,
 body.tax-recept-tipus .et_pb_post h2,
 body.tax-druh-receptu .et_pb_post h2,
+body.tax-tip-de-reteta .et_pb_post h2,
 body.tax-vrsta-recepta .et_pb_post h2 {
 	font-size: 22px;
 }
@@ -340,9 +356,11 @@ body.tax-vrsta-recepta .et_pb_post h2 {
 	body.post-type-archive-recepti .et_pb_post,
 	body.post-type-archive-recipe .et_pb_post,
 	body.post-type-archive-recepty .et_pb_post,
+	body.post-type-archive-retete .et_pb_post,
 	body.tag .et_pb_post,
 	body.tax-recept-tipus .et_pb_post,
 	body.tax-druh-receptu .et_pb_post,
+	body.tax-tip-de-reteta .et_pb_post,
 	body.tax-vrsta-recepta .et_pb_post {
 		float: left;
 		margin: 0 10px 20px;
@@ -353,9 +371,11 @@ body.tax-vrsta-recepta .et_pb_post h2 {
 	body.post-type-archive-recepti .et_pb_post:nth-of-type(2n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(2n+1),
 	body.post-type-archive-recepty .et_pb_post:nth-of-type(2n+1),
+	body.post-type-archive-retete .et_pb_post:nth-of-type(2n+1),
 	body.tag .et_pb_post:nth-of-type(2n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(2n+1),
 	body.tax-druh-receptu .et_pb_post:nth-of-type(2n+1),
+	body.tax-tip-de-reteta .et_pb_post:nth-of-type(2n+1),
 	body.tax-vrsta-recepta .et_pb_post:nth-of-type(2n+1) {
 		clear: both;
 	}
@@ -365,9 +385,11 @@ body.tax-vrsta-recepta .et_pb_post h2 {
 	body.post-type-archive-recepti .et_pb_post:nth-of-type(3n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(3n+1),
 	body.post-type-archive-recepty .et_pb_post:nth-of-type(3n+1),
+	body.post-type-archive-retete .et_pb_post:nth-of-type(3n+1),
 	body.tag .et_pb_post:nth-of-type(3n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(3n+1),
 	body.tax-druh-receptu .et_pb_post:nth-of-type(3n+1),
+	body.tax-tip-de-reteta .et_pb_post:nth-of-type(3n+1),
 	body.tax-vrsta-recepta .et_pb_post:nth-of-type(3n+1) {
 		clear: both;
 	}
@@ -377,9 +399,11 @@ body.tax-vrsta-recepta .et_pb_post h2 {
 	body.post-type-archive-recepti .et_pb_post:nth-of-type(4n+1),
 	body.post-type-archive-recipe .et_pb_post:nth-of-type(4n+1),
 	body.post-type-archive-recepty .et_pb_post:nth-of-type(4n+1),
+	body.post-type-archive-retete .et_pb_post:nth-of-type(4n+1),
 	body.tag .et_pb_post:nth-of-type(4n+1),
 	body.tax-recept-tipus .et_pb_post:nth-of-type(4n+1),
 	body.tax-druh-receptu .et_pb_post:nth-of-type(4n+1),
+	body.tax-tip-de-reteta .et_pb_post:nth-of-type(4n+1),
 	body.tax-vrsta-recepta .et_pb_post:nth-of-type(4n+1) {
 		clear: both;
 	}
@@ -389,9 +413,11 @@ body.post-type-archive-recept .et_pb_post .entry-content,
 body.post-type-archive-recepti .et_pb_post .entry-content,
 body.post-type-archive-recipe .et_pb_post .entry-content,
 body.post-type-archive-recepty .et_pb_post .entry-content,
+body.post-type-archive-retete .et_pb_post .entry-content,
 body.tag .et_pb_post .entry-content,
 body.tax-recept-tipus .et_pb_post .entry-content,
 body.tax-druh-receptu .et_pb_post .entry-content,
+body.tax-tip-de-reteta .et_pb_post .entry-content,
 body.tax-vrsta-recepta .et_pb_post .entry-content {
 	padding-top: 0;
 }
@@ -476,6 +502,7 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 .type-recept h2,
 .type-recipe h2,
 .type-recepty h2,
+.type-retete h2,
 .type-recepti h2 {
 	color: #0088a5;
 	margin-top: 50px;
@@ -486,6 +513,7 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 .type-recept .entry-content ul:last-of-type,
 .type-recipe .entry-content ul:last-of-type,
 .type-recepty .entry-content ul:last-of-type,
+.type-retete .entry-content ul:last-of-type,
 .type-recepti .entry-content ul:last-of-type {
 	padding-bottom: 0 !important;
 }
@@ -493,6 +521,7 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 .type-recept .entry-content .align-right,
 .type-recipe .entry-content .align-right,
 .type-recepty .entry-content .align-right,
+.type-retete .entry-content .align-right,
 .type-recepti .entry-content .align-right {
 	float: right;
 	margin: 0 0 20px 20px;
@@ -501,6 +530,7 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 .type-recept .post-meta,
 .type-recipe .post-meta,
 .type-recepty .post-meta,
+.type-retete .post-meta,
 .type-recepti .post-meta {
 	display: none;
 }
