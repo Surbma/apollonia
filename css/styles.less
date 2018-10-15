@@ -187,7 +187,7 @@ blockquote {
 	margin-left: 10px;
 }
 
-#top-menu li {
+#top-menu > li {
 	margin: 15px 22px 33px 0;
 	border-right: 1px solid #d8d8d8;
 }
@@ -197,7 +197,7 @@ blockquote {
 	border-right: 0;
 }
 
-#top-menu a {
+#top-menu > li > a {
 	padding: 0 !important;
 }
 
@@ -243,11 +243,13 @@ a:hover {
 	font-weight: bold;
 }
 
+.NextendAccordionMenuWidget,
 .widget_nav_menu,
 .widget_subpages {
 	background: #f5f5f5;
 }
 
+.NextendAccordionMenuWidget .widgettitle,
 .widget_nav_menu .widgettitle,
 .widget_subpages .widgettitle {
 	padding: 15px;
@@ -285,6 +287,14 @@ a:hover {
 	font-size: 14px;
 }
 
+.NextendAccordionMenuWidget dd.parent {
+	background: #e6e7e8;
+}
+
+.NextendAccordionMenuWidget dt.active,
+.NextendAccordionMenuWidget dt.active a span,
+.NextendAccordionMenuWidget dt:hover,
+.NextendAccordionMenuWidget dt:hover a span,
 .widget_nav_menu .sub-menu li a:hover,
 .widget_nav_menu .sub-menu li.current-menu-item > a,
 .widget_nav_menu li a:hover,
@@ -294,7 +304,7 @@ a:hover {
 .widget_subpages li a:hover,
 .widget_subpages li.widget_subpages_current_page > a {
 	background: #0088a5;
-	color: #fff;
+	color: #fff !important;
 }
 
 #et-footer-nav .container,
@@ -475,7 +485,7 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 
 // Főmenüpontok maximális szélességet kaptak
 
-#top-menu li {
+#top-menu > li {
 	width: 170px;
 	vertical-align: text-top;
 	height: 28px;

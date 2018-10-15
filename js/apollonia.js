@@ -1,3 +1,3 @@
-// @codekit-prepend "src/js/core/core"
-// @codekit-prepend "src/js/components/accordion"
+// @codekit-prepend "uikit/core/core"
+// @codekit-prepend "uikit/components/accordion"
 // @codekit-prepend "custom"
