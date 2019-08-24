@@ -7,6 +7,29 @@
 @apollonia-color-6:			#008fcf;
 @apollonia-color-7:			#7e9cd0;
 
+// Global fonts
+
+@font-face {
+    font-family: Bariol;
+    src: url("../fonts/bariol-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Bariol;
+    font-weight: bold;
+    src: url("../fonts/bariol-bold.otf") format("opentype");
+}
+
+body {
+	font-family: 'Bariol', Arial, sans-serif !important;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+	padding-top: 10px;
+}
+
 // Globális színek felülírása
 
 body {
@@ -24,7 +47,7 @@ body {
 	}
 
 	.bottom-nav a {
-		color:@apollonia-color-1;
+		color: @apollonia-color-1;
 	}
 
 	.bottom-nav a:hover {
@@ -254,9 +277,28 @@ blockquote {
 	max-width: 135px;
 }
 
+.bottom-nav,
+.bottom-nav a {
+	font-size: 13px;
+}
+
+#et-footer-nav {
+	background-color: #f5f5f5;
+}
+
+#footer-bottom {
+	background-color: #ffffff;
+}
+
+#footer-info,
+#footer-info a {
+	font-size: 13px;
+	color: #999999;
+}
+
 @media (min-width: 981px) {
 	.et_right_sidebar #main-content .container:before {
-		left: 30% !important;
+		left: 20.875% !important;
 	}
 
 	.et_right_sidebar #left-area {
@@ -288,6 +330,13 @@ blockquote {
 	// #top-menu-nav {display: none;}
 	// #et_mobile_nav_menu {display: block;}
 	// #et_top_search {float: left;margin: 0 35px 0 0;}
+}
+
+#main-header,
+#main-header .nav li ul,
+.et-search-form,
+#main-header .et_mobile_menu {
+	background-color: #f5f5f5;
 }
 
 .et-icon a:before {
@@ -331,6 +380,9 @@ blockquote {
 
 #top-menu > li > a {
 	padding: 0 !important;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .et_pb_widget a {
