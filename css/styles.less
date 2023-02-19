@@ -412,6 +412,7 @@ a:hover {
 	background: #f5f5f5;
 	margin-top: 20px;
 	padding: 20px;
+	overflow: hidden;
 }
 
 .childpage-title {
@@ -422,6 +423,7 @@ a:hover {
 
 .childpage-content {
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 .childpage-content .wp-post-image {
@@ -431,8 +433,8 @@ a:hover {
 
 .childpage-more-link {
 	clear: both;
-	margin: 15px 0 0;
 	font-weight: bold;
+	float: right;
 }
 
 .NextendAccordionMenuWidget,
@@ -688,8 +690,16 @@ body.tax-vrsta-recepta .et_pb_post .entry-content {
 	text-align: left;
 }
 
+#top-menu > li > ul {
+	top: 28px;
+}
+
+#top-menu > li li {
+	width: auto;
+}
+
 .et_header_style_centered #et_search_icon:before {
-	top: 0;
+	top: 5px;
 }
 
 // Az egy oszlopos Footer igazítása
