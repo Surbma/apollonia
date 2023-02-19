@@ -3,7 +3,7 @@
 /*
 Plugin Name: Apollonia
 Description: Customizations for the install apollonia.
-Version: 17.4
+Version: 17.5
 Author: Surbma
 */
 
